@@ -1,0 +1,142 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
+{\fonttbl\f0\fmodern\fcharset0 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww14320\viewh17000\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f0\fs38 \cf0 \
+###############################################\
+###############################################\
+# Rosenzweig-MacArthur predator-prey model\
+reset()\
+var('r,N,K,a,P,b,d')\
+dN = r*N*(1-N/K) - (a*N*P)/(1+b*N) # prey, logistic eqn of growth\
+dP = (a*N*P)/(1+b*N) - d*P			# predator, attack rate satiated, non-linear functional response (II) \
+# b - handling time, time to consume per prey. A high b, takes long time, limits\
+\
+# short version \
+# solve for zero at eqm, and find the isoclines.\
+bothsols = solve([dN,dP], [N, P])\
+bothsols[1]\
+\
+eqmP = bothsols[3][1].rhs()\
+factor(eqmP)\
+\
+# or use the built in function \
+J = jacobian([dN, dP], [N,P])\
+J \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\cf0 # evaluate at the eqm points.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+\cf0 J1 = J.substitute(bothsols[3][0]) # substitute sequentially to get rid of P\
+J1\
+J2 = J1.substitute(bothsols[3][1]) # substitute sequentially to get rid of P\
+J2\
+eigs = J2.eigenvalues()\
+eigs\
+# long\
+# test values\
+eigs[0](K = 0.8, r = 0.5, a = 5.0, b = 3.0, d = 0.1)\
+# 0.00795212765957445 - 0.213744622542149*I # positive, almost neutrally stable\
+# lower K\
+eigs[0](K = 0.08, r = 0.5, a = 5.0, b = 3.0, d = 0.1)\
+# -1.49987988652185e-17 - 0.244948974278318*I # neutrally stable\
+\
+\
+\
+########################\
+# Find stability condition\
+# the trace must be negative to be stable\
+tr = J2.trace()\
+tr(K = 0.8, r = 0.5, a = 5.0, b = 3.0, d = 0.1)\
+# positive, unstable  # \
+tr(K = 0.08, r = 0.5, a = 5.0, b = 3.0, d = 0.1)\
+# negative, stable\
+\
+solve(tr == 0, K)\
+\
+stab_cond = solve(tr == 0, K)[0].rhs() # stability condition\
+stab_cond \
+stab_cond_dom =  (1+d*b)/(a*b*(1-d*b))\
+# -(b*d + a)/(b^2*d - a*b)\
+# This tells us what K has to be depending on all the other parameters at the border of the stability condition\
+\
+# test with parameters\
+stab_cond(r = 0.5, a = 5.0, b = 3.0, d = 0.1)\
+# 0.375 # K_critical\
+\
+stab_cond_dom(r = 0.5, a = 5.0, b = 3.0, d = 0.1)\
+# 0.375 # K_critical\
+\
+\
+eigs[0](K = 0.37588,r = 0.5, a = 5.0, b = 3.0, d = 0.1) # small real part, neutrally stable\
+# negative, imaginary\
+eigs[0](K = 0.3,r = 0.5, a = 5.0, b = 3.0, d = 0.1)\
+# negative eigenvalues if above k_critical, stable\
+eigs[0](K = 0.4,r = 0.5, a = 5.0, b = 3.0, d = 0.1)\
+# positive eigenvalues if below k_critical, unstable\
+\
+# plot the stability conditions\
+d_vals = [x * 0.1 for x in range(0, 10)] # test the d death rate\
+K_res = range(0,10)\
+\
+for i in range(10): \
+	K_res[i] = stab_cond(a = 5.0, b = 3.0, d = d_vals[i])\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\cf0 pl = plot([])\
+pl += line(zip(d_vals,K_res))\
+pl.axes_labels(['d','K'])\
+show(pl)\
+\
+#test\
+# high d and low K\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+\cf0 eigs[0](K = 0.4,r = 0.5, a = 5.0, b = 3.0, d = 0.8) # negative, stable\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\cf0 # low d and high K\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+\cf0 eigs[0](K = 0.8,r = 0.5, a = 5.0, b = 3.0, d = 0.4) # positive, unstable\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+\cf0 eigs[0](K = 0.5,r = 1, a = 1, b = 5, d = 0.1) # negative, stable\
+#####################\
+# Find oscillation condition\
+tr = J2.trace()\
+dete = J2.det()\
+delta = tr^2 - 4*dete\
+# quadratic formula x = -b +- sqrt(b^2 - 4 ac)/2\
+# same as sqrt((a21a22)^2  - 4(a11*a22-a21-a12))\
+# (a21a22)^2 is the trace\
+# 4(a11*a22-a21*a12) is the determinant\
+# so tr^2 - 4(det) = delta\
+# sqrt = delta must be positive to not have oscillations\
+\
+delta(K = 0.3,r = 0.5, a = 5.0, b = 3.0, d = 0.1)\
+# negative square root, so there are oscillations\
+delta(K = 0.9,r = 0.5, a = 5.0, b = 3.0, d = 0.1)\
+# negative, oscillations\
+delta(K = 0.01,r = 0.5, a = 5.0, b = 3.0, d = 0.1)\
+# positive, no oscillations\
+\
+oscill_cond = solve(delta == 0, K)[0].rhs() # stability condition\
+oscill_cond\
+# test \
+oscill_cond(r = 0.5, a = 5.0, b = 3.0, d = 0.1)\
+# positive\
+oscill_cond(r = 0.0005, a = 5.0, b = 3.0, d = 0.1)\
+# K always positive, K can always be positive and feasible\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\cf0 \
+\pard\pardeftab720\ql\qnatural
+\cf0 ########################\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+\cf0 \
+\pard\pardeftab720\ql\qnatural
+\cf0 # taylor expansion\
+taylor(dN, N, 1, 5)\
+}
