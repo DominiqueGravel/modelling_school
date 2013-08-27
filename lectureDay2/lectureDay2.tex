@@ -174,7 +174,7 @@ escapeinside={\%*}{*)}          	% if you want to add a comment within your code
 
 	\begin{frame}{Exercise 1}
 		\begin{itemize}
-			\item Calculate the time series of the geometric growth model between $t_0$ and $t_10$ and with $N_0 = 10$ and $\lambda = 2$;	
+			\item Calculate the time series of the geometric growth model between $t_0$ and $t_{10}$ and with $N_0 = 10$ and $\lambda = 2$;	
 			\item Plot on the same figure the analytical solution
 			\item Find the equivalent growth rate $r$ for the exponential growth model
 			\item Perform the numerical integration of the exponential growth model
@@ -195,7 +195,7 @@ escapeinside={\%*}{*)}          	% if you want to add a comment within your code
 
 		The simplest updating formula is to use Taylor expansion:\\
 		$C^{t+\Delta t} = C^t + \Delta t\frac{dC^t}{dt} + O(\Delta t)$\\
-		$C^{t+\Delta t} \approxeq C^t + \Delta t\frac{dC^t}{dt} + O(\Delta t)$
+		$C^{t+\Delta t} \approxeq C^t + \Delta t\frac{dC^t}{dt}$
 		\vskip 1em
 	
 		where $O(t)$ is the error made by the Taylor approximation.  The method is called \emph{forward differencing} or Euler integration and said to be first-order accurate, as all higher order terms are ignored. \\
@@ -209,8 +209,8 @@ escapeinside={\%*}{*)}          	% if you want to add a comment within your code
 
 	\begin{frame}{Exercise 2}
 		\begin{itemize}
-			\item Program a function to integrate the logistic growth modelwith the Euler method between $t_0$ and $t_100$ and with $N_0 = 0.1$, $r = 1$ $ K = 1$\\
-			$\frac{dN}{dt} = rN(1-frac{N}{K})$\\
+			\item Program a function to integrate the logistic growth model with the Euler method between $t_0$ and $t_100$ and with $N_0 = 0.1$, $r = 1$ $ K = 1$\\
+			$\frac{dN}{dt} = rN(1-\frac{N}{K})$\\
 			\item Run it with $r = 1, 2, 2.5, 2.6, 2.8, 3.5, 4.0$
 			\item Run it also with $ r = 4.0$, but for $N_0 = 0.11$. Compare the solution with $N_0 = 0.1$
 			\item Advanced exercise: compute the bifurcation map
@@ -346,7 +346,7 @@ escapeinside={\%*}{*)}          	% if you want to add a comment within your code
 			
 		Compute the numerical integration of the Rosensweig-MacArthur model of predator prey interactions:\\
 		$\frac{dR}{dt} = rR(1-\frac{R}{K}) - \frac{aRC}{1+bR}$\\
-		$\frac{dC}{dt} = \frac{aRC}{1+bR} - d*C$\\
+		$\frac{dC}{dt} = \frac{aRC}{1+bR} - dC$\\
 		\vskip 1em
 
 		Consider the parameters $r = 1, a = 1, b = 5, d = 0.1$. Try different values of $K$ within the range$[0.4,0.8]$. What happens?

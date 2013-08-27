@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  20 AUG 2013 21:34
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  26 AUG 2013 22:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1503,40 +1503,33 @@ Overfull \hbox (204.40062pt too wide) has occurred while \output is active
 [13
 
 ]
+Package epstopdf Info: Source file: <bifurcation_map.eps>
+(epstopdf)                    date: 2013-08-26 17:20:31
+(epstopdf)                    size: 1445816 bytes
+(epstopdf)             Output file: <bifurcation_map-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-08-26 17:20:31
+(epstopdf)                    size: 108943 bytes
+(epstopdf)             Command: <repstopdf --outfile=bifurcation_map-eps-conver
+ted-to.pdf bifurcation_map.eps>
+(epstopdf)             \includegraphics on input line 227.
+Package epstopdf Info: Output file is already uptodate.
+ <bifurcation_map-eps-converted-to.pdf, id=194, 505.89pt x 505.89pt>
+File: bifurcation_map-eps-converted-to.pdf Graphic file (type pdf)
+
+<use bifurcation_map-eps-converted-to.pdf>
+Package pdftex.def Info: bifurcation_map-eps-converted-to.pdf used on input lin
+e 227.
+(pdftex.def)             Requested size: 193.32088pt x 193.322pt.
+
+Overfull \vbox (0.5296pt too high) detected at line 227
+ []
+
+
 Overfull \hbox (204.40062pt too wide) has occurred while \output is active
  [] [] [] [] [] [] [] [] 
  []
 
 [14
-
-]
-Package epstopdf Info: Source file: <bifurcation_map.eps>
-(epstopdf)                    date: 2013-08-20 15:23:10
-(epstopdf)                    size: 1445816 bytes
-(epstopdf)             Output file: <bifurcation_map-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-08-20 15:27:52
-(epstopdf)                    size: 108943 bytes
-(epstopdf)             Command: <repstopdf --outfile=bifurcation_map-eps-conver
-ted-to.pdf bifurcation_map.eps>
-(epstopdf)             \includegraphics on input line 240.
-Package epstopdf Info: Output file is already uptodate.
- <bifurcation_map-eps-converted-to.pdf, id=205, 505.89pt x 505.89pt>
-File: bifurcation_map-eps-converted-to.pdf Graphic file (type pdf)
-
-<use bifurcation_map-eps-converted-to.pdf>
-Package pdftex.def Info: bifurcation_map-eps-converted-to.pdf used on input lin
-e 240.
-(pdftex.def)             Requested size: 193.32088pt x 193.322pt.
-
-Overfull \vbox (0.5296pt too high) detected at line 240
- []
-
-
-Overfull \hbox (204.40062pt too wide) has occurred while \output is active
- [] [] [] [] [] [] [] [] 
- []
-
-[15
 
  <./bifurcation_map-eps-converted-to.pdf>]
 \openout4 = `lectureDay2.vrb'.
@@ -1546,19 +1539,19 @@ Overfull \hbox (204.40062pt too wide) has occurred while \output is active
  [] [] [] [] [] [] [] [] 
  []
 
-[16
+[15
 
 ]
 \openout4 = `lectureDay2.vrb'.
 
- (./lectureDay2.vrb <fig6_2.pdf, id=240, 505.89pt x 505.89pt>
+ (./lectureDay2.vrb <fig6_2.pdf, id=229, 505.89pt x 505.89pt>
 File: fig6_2.pdf Graphic file (type pdf)
 
 <use fig6_2.pdf>
 Package pdftex.def Info: fig6_2.pdf used on input line 2.
 (pdftex.def)             Requested size: 193.32088pt x 193.322pt.
 )
-Overfull \vbox (0.5296pt too high) detected at line 267
+Overfull \vbox (0.5296pt too high) detected at line 254
  []
 
 
@@ -1566,13 +1559,13 @@ Overfull \hbox (204.40062pt too wide) has occurred while \output is active
  [] [] [] [] [] [] [] [] 
  []
 
-[17
+[16
 
  <./fig6_2.pdf>]
 \openout4 = `lectureDay2.vrb'.
 
  (./lectureDay2.vrb
-<fig6_3.pdf, id=627, 504.09018pt x 236.97835pt>
+<fig6_3.pdf, id=616, 504.09018pt x 236.97835pt>
 File: fig6_3.pdf Graphic file (type pdf)
  <use fig6_3.pdf>
 Package pdftex.def Info: fig6_3.pdf used on input line 2.
@@ -1582,12 +1575,19 @@ Overfull \hbox (204.40062pt too wide) has occurred while \output is active
  [] [] [] [] [] [] [] [] 
  []
 
-[18
+[17
 
  <./fig6_3.pdf>]
 \openout4 = `lectureDay2.vrb'.
 
  (./lectureDay2.vrb)
+Overfull \hbox (204.40062pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] 
+ []
+
+[18
+
+]
 Overfull \hbox (204.40062pt too wide) has occurred while \output is active
  [] [] [] [] [] [] [] [] 
  []
@@ -1602,16 +1602,9 @@ Overfull \hbox (204.40062pt too wide) has occurred while \output is active
 [20
 
 ]
-Overfull \hbox (204.40062pt too wide) has occurred while \output is active
- [] [] [] [] [] [] [] [] 
- []
-
-[21
-
-]
 \openout4 = `lectureDay2.vrb'.
 
- (./lectureDay2.vrb <fig6_5.pdf, id=821, 501.61009pt x 253.26399pt>
+ (./lectureDay2.vrb <fig6_5.pdf, id=810, 501.61009pt x 253.26399pt>
 File: fig6_5.pdf Graphic file (type pdf)
 
 <use fig6_5.pdf>
@@ -1622,12 +1615,19 @@ Overfull \hbox (204.40062pt too wide) has occurred while \output is active
  [] [] [] [] [] [] [] [] 
  []
 
-[22
+[21
 
  <./fig6_5.pdf>]
 \openout4 = `lectureDay2.vrb'.
 
  (./lectureDay2.vrb)
+Overfull \hbox (204.40062pt too wide) has occurred while \output is active
+ [] [] [] [] [] [] [] [] 
+ []
+
+[22
+
+]
 Overfull \hbox (204.40062pt too wide) has occurred while \output is active
  [] [] [] [] [] [] [] [] 
  []
@@ -1642,6 +1642,9 @@ Overfull \hbox (204.40062pt too wide) has occurred while \output is active
 [24
 
 ]
+\openout4 = `lectureDay2.vrb'.
+
+ (./lectureDay2.vrb)
 Overfull \hbox (204.40062pt too wide) has occurred while \output is active
  [] [] [] [] [] [] [] [] 
  []
@@ -1699,21 +1702,11 @@ Overfull \hbox (204.40062pt too wide) has occurred while \output is active
 [30
 
 ]
-\openout4 = `lectureDay2.vrb'.
-
- (./lectureDay2.vrb)
 Overfull \hbox (204.40062pt too wide) has occurred while \output is active
  [] [] [] [] [] [] [] [] 
  []
 
 [31
-
-]
-Overfull \hbox (204.40062pt too wide) has occurred while \output is active
- [] [] [] [] [] [] [] [] 
- []
-
-[32
 
 ]
 \tf@nav=\write7
@@ -1725,20 +1718,20 @@ Overfull \hbox (204.40062pt too wide) has occurred while \output is active
 \tf@snm=\write9
 \openout9 = `lectureDay2.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 513.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 513.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 500.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 500.
  (./lectureDay2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 513.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 513.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 500.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 500.
 Package rerunfilecheck Info: File `lectureDay2.out' has not changed.
 (rerunfilecheck)             Checksum: 095CC706848BFF0474A592BC10C17D25;229.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 513.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 500.
  ) 
 Here is how much of TeX's memory you used:
- 28955 strings out of 493633
- 613301 string characters out of 3143378
+ 28951 strings out of 493633
+ 613266 string characters out of 3143378
  1092032 words of memory out of 3000000
- 31444 multiletter control sequences out of 15000+200000
+ 31442 multiletter control sequences out of 15000+200000
  46604 words of font info for 90 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  64i,14n,78p,665b,1993s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1756,10 +1749,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2011/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2011/texmf-
 dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/2011/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on lectureDay2.pdf (32 pages, 1459995 bytes).
+Output written on lectureDay2.pdf (31 pages, 1459169 bytes).
 PDF statistics:
- 1323 PDF objects out of 1440 (max. 8388607)
- 1037 compressed objects within 11 object streams
- 68 named destinations out of 1000 (max. 500000)
+ 1311 PDF objects out of 1440 (max. 8388607)
+ 1026 compressed objects within 11 object streams
+ 66 named destinations out of 1000 (max. 500000)
  98 words of extra memory for PDF output out of 10000 (max. 10000000)
 

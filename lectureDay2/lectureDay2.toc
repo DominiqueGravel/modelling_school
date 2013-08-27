@@ -1,6 +1,6 @@
 \beamer@endinputifotherversion {3.10pt}
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
 \beamer@sectionintoc {2}{Objectives}{8}{0}{2}
-\beamer@sectionintoc {3}{Euler method}{12}{0}{3}
-\beamer@sectionintoc {4}{Runge Kutta}{21}{0}{4}
-\beamer@sectionintoc {5}{Libraries}{26}{0}{5}
+\beamer@sectionintoc {3}{Euler method}{11}{0}{3}
+\beamer@sectionintoc {4}{Runge Kutta}{20}{0}{4}
+\beamer@sectionintoc {5}{Libraries}{25}{0}{5}
