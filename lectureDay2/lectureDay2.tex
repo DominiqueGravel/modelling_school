@@ -321,9 +321,9 @@ escapeinside={\%*}{*)}          	% if you want to add a comment within your code
 
 			# Calculate the amount of change:
 			k1 = dNdt(N0,lambda = 1)
-			k2 = dNdt(N0 + 0.5*k1)
-			k3 = dNdt(N0 + 0.5*k2)
-			k4 = dNdt(N0 + k3)
+			k2 = dNdt(N0 + 0.5*k1,lambda = 1)
+			k3 = dNdt(N0 + 0.5*k2,lambda = 1)
+			k4 = dNdt(N0 + k3,lambda = 1)
 			delta = (k1 + 2*k2 + 2*k3 + k4)/6
 
 			# Calculate the next density
@@ -365,7 +365,7 @@ escapeinside={\%*}{*)}          	% if you want to add a comment within your code
 		# Define the mathematical model
 		model = function(Time, State, Pars) {
 		with(as.list(c(State,Pars)), {
-			dR = r*R*(1-R/K) - a1*R*C/(1+b*R)
+			dR = r*R*(1-R/K) - a*R*C/(1+b*R)
 			dC = a*R*C/(1+b*R) - d*C
 			list(c(dR,dC))
 		})
@@ -384,7 +384,7 @@ escapeinside={\%*}{*)}          	% if you want to add a comment within your code
 		K = 0.6
 
 		# Collect them in a vector
-		pars = c(r = r, a = a, b = b, K = K)
+		pars = c(r = r, a = a, b = b, d = d, K = K)
 
 		# Set the initial conditions
 		T0 = c(R = 1, C = 0.1)
