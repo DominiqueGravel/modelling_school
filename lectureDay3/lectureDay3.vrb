@@ -1,0 +1,25 @@
+\frametitle {Before the theory}\framesubtitle {Essential programming tips}
+
+\begin{lstlisting}
+# Draw a random number between 0 and 1
+rand = runif(n = 1, min = 0, max = 1)
+
+# Set the seed of the random number generator
+set.seed(1)
+runif(n = 1, min = 0, max = 1)
+runif(n = 1, min = 0, max = 1)
+
+set.seed(1)
+runif(n = 1, min = 0, max = 1)
+runif(n = 1, min = 0, max = 1)
+
+# Draw a random event A with probability p
+test = 0
+test[runif(n = 1, min = 0, max = 1) < p] = 1
+
+# or alternatively
+if(runif(1,0,1) < p) test = 1
+else test = 0
+
+\end{lstlisting}
+

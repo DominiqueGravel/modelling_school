@@ -1,0 +1,22 @@
+\frametitle {Another trick!}\par Fortunately, there is also a way to compute eigen values numerically. Particularly useful for large matrices. \\
+\begin{lstlisting}
+# Example of computation of eigen values of a very large matrix.
+# Draw a random matrix for a community of S species
+S = 25
+J = matrix(rnorm(S^2,0,a),nr=S,nc=S)
+
+# Keep only L links, based on connectance C
+C = 0.3
+rand = matrix(runif(S^2,0,1),nr=S,nc=S)
+J[rand>C] = 0
+
+# Impose competition along the diagonal
+diag(J) = -1
+
+# Compute eigen values
+res_eigen = eigen(J)$values
+
+# Keep only the real parts
+real_eigen = as.real(res_eigen)
+\end{lstlisting}
+

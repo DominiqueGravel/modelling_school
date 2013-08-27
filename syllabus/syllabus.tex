@@ -1,0 +1,151 @@
+\documentclass[11]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{authblk} 
+\usepackage{geometry}
+\geometry{letterpaper,margin=2.5cm}
+\usepackage{amsmath} 
+\usepackage{hyperref}
+\hypersetup
+{
+    colorlinks = true, linkcolor = blue, citecolor = blue, urlcolor = blue,
+}
+\usepackage{url}
+
+\title{Introduction to modelling techniques in ecology}
+\date {\today}
+\author[1,2] {Dominique Gravel}
+\author[1] {Timothée Poisot}
+
+\affil[1] {Département de biologie, chimie et géographie, Université du Québec à Rimouski. 1-418-736-8458 \#1752}
+\affil[2] {\url{dominique_gravel@uqar.ca}}
+
+\begin{document}
+
+	\maketitle
+
+	\section*{General objective}
+	Numerical tools are essential to run biodiversity scenarios and rigorously formulate testable hypotheses in ecological research. The main purpose of this course is to get students familiar with the main techniques of ecological modelling. After this course, the student is expected to be able to formulate mathematically a simple ecological model, use standard analytical methods to study the equilibrium state and its stability, and run dynamic simulations. The main langage of the course is R, but the basic programming techniques that will be teached are easily transposable to other langages.  
+
+	\section*{Specific objectives}
+At the end of the course, the student will:
+\begin{itemize}
+\item Formulate ordinary differential equations describing community dynamics of a given ecological system
+\item Analyze the equilibrium and the stability of systems of ordinary differential equations
+\item Aquire essential programming techniques for numerical analyses 
+\item Develop functions to simulate ecological dynamics
+\item Understand, analyze and criticize usage of modelling techniques in ecology
+\end{itemize}
+
+	\section*{Requirements}
+This intensive training session is principally intended for graduate students and postdocs in biology, ecology \& evolution, forestry and marine sciences. For each theme, training sessions will be made of short lectures on the different techniques, followed by supervised exercises on R, and finally conducting a small research project in team in a workshop context. Programming skills in R and elementary notions of calculus are required.
+
+	\section*{Approach}
+Teaching will be highly dynamic and students are expected to participate actively. Emphasis will be given to exercises, programming and team work. Team projects will be established on the first day and the teams will present their results at the end of the week, with the objective of initiative collaborative studies and end up in scientific publications. Each day will follow rigorously the schedule:\\
+\\
+08h00 - 09h45: Introductionary lecture \& analysis of illustrative scripts\\
+10h00 - 11h00: Supervised exercised\\
+11h00 - 12h00: Analysis \& reproduction of illustrative studies\\
+13h00 - 14h00: Follow-up on the labs\\
+14h00 - 16h00: Team project\\
+16h00 - 17h00: Lecture by graduate students from the Theoretical Ecosystem Ecology Lab
+
+	\section*{Content}
+	\subsection*{Day 1: Ordinary differential equations 1, analytical methods}
+	\begin{itemize}
+		\item Discrete versus continuous time models
+		\item Definition and formulation of ODEs
+		\item Steady-state solutions
+		\item Local stability analysis
+	\end{itemize}
+
+	\subsection*{Day 2: Ordinary differential equations 2, numerical methods}
+	\begin{itemize}
+		\item Basic programming notions (loops, conditional statements, functions etc...)
+		\item Euler \& Runge-Kutta methods of integration
+		\item Introduction to rootSolve and deSolve packages
+	\end{itemize}
+
+	\subsection*{Day 3: Stochastic models}
+	\begin{itemize}
+		\item Discrete time stochastic models
+		\item Analytical appoximations to stochastic models
+		\item Probabilistic models
+		\item Essential probability distributions \& random number generators
+	\end{itemize}
+
+	\subsection*{Day 4: Spatial models}
+	\begin{itemize}
+		\item Spatial models classification
+		\item Cellular automaton
+		\item Spatially explicit dispersal model
+		\item Diffusion
+	\end{itemize}
+
+	\subsection*{Day 5: Ecological networks}
+	\begin{itemize}
+		\item Network properties
+		\item Network models (random, scale free, small world, cascade, niche)
+		\item Null models
+	\end{itemize}
+
+	\section*{Required readings}
+The following readings are required for the course, with great attention. We will conduct specific exercise and discuss them in group.
+	\begin{itemize}
+		\item Tilman, D. (1994). Competition and Biodiversity in Spatially Structured Habitats. Ecology, 75, 2–16.
+		\item Vandermeer, J. (2006). Oscillating Populations and Biodiversity Maintenance. BioScience, 56, 967–975.
+		\item Hubbell, S.P. (1997). A unified theory of biogeography and relative species abundance and its application to tropical rain forests and coral reefs. Coral Reefs, 9–21.
+		\item Malamud, B., Morein, G. \& Turcotte, D. (1998). Forest fires: an example of self-organized critical behavior. Science, 1840, 1998–2001.
+		\item Williams, R. \& Martinez, N. (2000). Simple rules yield complex food webs. Nature, 404, 180–183.
+	\end{itemize}
+
+	\section*{Suggested readings}
+
+The following articles will not be specifically studied during the course, but students are strongly encourage to read them BEFORE the course to stimulate discussions. 
+
+	\begin{itemize}
+		\item Chesson, P. (2000). Mechanisms of maintenance of species diversity. Annual review of Ecology and Systematics, 31, 343–366.
+		\item Dunne, J.A. (2006). The Network Structure of Food Webs. In: Ecological networks: Linking structure and dynamics. Eds. M.Pascual \& J. Dunne. pp. 27–86. Oxford University Press. Oxford.
+		\item  Evans, M.R., Grimm, V., Johst, K., Knuuttila, T., De Langhe, R., Lessells, C.M., et al. (2013). Do simple models lead to generality in ecology? Trends in ecology \& evolution, 1–6.
+		\item Fawcett, T.W. \& Higginson, A.D. (2012). Heavy use of equations impedes communication among biologists. Proceedings of the National Academy of Sciences of the United States of America, 109, 11735–9.
+		\item Gravel, D., Guichard, F. \& Hochberg, M.E. (2011). Species coexistence in a variable world. Ecology letters, 14, 828–39.
+		\item Gravel, D., Poisot, T. \& Desjardins-Proulx, P. Using neutral theory to reveal the contribution of meta-community processes to assembly in complex landscapes. In review in J. of Limnology. 
+		\item Strogatz, S. (2001). Exploring complex networks. Nature, 410, 268–276.
+		\item Turchin, P. (2001). Does population ecology have general laws ? Oikos, 17–26.
+	\end{itemize}
+
+	\section*{Software}
+All of the teaching will be conducted on R. The following packages need to be installed prior to the course:
+	\begin{itemize}
+		\item cheddar
+		\item rootSolve
+		\item deSolve
+		\item NetIndices
+		\item vegan
+		\item bipartite
+		\item UNTB
+		\item igraph
+	\end{itemize}
+An introduction to the open source symbolic math toolbox \emph{sage (\url{http://www.sagemath.org/})} will be provided. This software allows to perform the most standard analysis of ordinary and partial differential equations such as solving for equilibrium, isolating variables, computing derivatives and integrals and computing eigen values. It runs on a common Python interface. 
+
+	\section*{Housing \& Food}
+Training will be given at the Domaine Valga  (\url{http://www.domainevalga.com/}), located at Saint-Gabriel (approx. 30 km from Rimouski). Students are expected to arrive late afternoon on Sunday the 26th of August and the workshop will end at the end of the afternoon on Friday the 30th of August. Housing will be provided in two cottages located around the lake.  **Sheets are not provided, bring your sleeping bag**. The course will be given at the main building of the Domaine Valga. Students are in charge of bringing food for breakfast and lunch, while dinners are included in the course fees. The cost of the summer school is of 287.44\$ for students supervised by a member of the CREATE program in Forest Complexity Modelling (\url{http://www.mcf.uqam.ca/}) and of 356.42\$ for other participants. The fees will have to be paid by check on site and a receipt will be provided. 
+
+	\section*{References}
+
+	\begin{enumerate} 
+		\item Begon, M., C. R. Townsend, and J. L. Harper. 2006. Ecology. From Individuals to Ecosystems. Fourth Edition. Blackwell Publishing Ltd, Oxford.
+
+\item Gotelli, N. J. 2008. A Primer of Ecology. 4th Edition. Sinauer Associates, Inc., Sunderland, MA.
+
+\item Loreau, M. 2010. From Populations to Ecosystems: Theoretical Foundations for a New Ecological Synthesis. Princeton University Press, Princeton.
+
+\item Soetaert, K., and P. M. J. Herman. 2009. A Practical Guide to Ecological Modelling. Using R as a Simulation Platform. Springer, New York.
+
+\item Stevens, M. H. H. 2009. A Primer of Ecology with R. Springer, New York.
+
+\item Wilson, W. 2000. Simulating Ecological and Evolutionary Systems in C. Cambridge University Press, Cambridge.
+
+	\end{enumerate}
+
+\end{document}

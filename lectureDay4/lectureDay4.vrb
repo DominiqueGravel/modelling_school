@@ -1,0 +1,14 @@
+\frametitle {Solving the model on R}\begin {lstlisting}
+# PLOTTING THE RESULTS
+# Solve the model
+eq_px = get_px(adjMat,A,b=0,c=0,e=0.1,f=0.5)
+
+# Rank the patches according to equilibrium occurrence probability
+RK = rank(eq_px)
+col = heat.colors(n = n)
+vec.col = numeric(n)
+for(i in 1:n) vec.col[i] = col[RK[i]]
+
+# Add points to the figure
+points(XY[,1],XY[,2],pch=21,bg=vec.col,cex = A)
+\end{lstlisting}

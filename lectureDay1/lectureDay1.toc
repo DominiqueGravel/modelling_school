@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.10pt}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Objectives}{16}{0}{2}
+\beamer@sectionintoc {3}{Definitions}{18}{0}{3}
+\beamer@sectionintoc {4}{Steps}{25}{0}{4}
+\beamer@sectionintoc {5}{Equilibrium}{32}{0}{5}
+\beamer@sectionintoc {6}{Local stability analysis}{37}{0}{6}

@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.10pt}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Objectives}{6}{0}{2}
+\beamer@sectionintoc {3}{Theory}{9}{0}{3}
+\beamer@sectionintoc {4}{Stochastic models}{25}{0}{4}
+\beamer@sectionintoc {5}{Useful algorithms}{27}{0}{5}
