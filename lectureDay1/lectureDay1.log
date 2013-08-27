@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  25 AUG 2013 22:39
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  27 AUG 2013 08:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1663,10 +1663,10 @@ Overfull \hbox (254.49777pt too wide) has occurred while \output is active
 
 ]
 Package epstopdf Info: Source file: <geo_vs_exp_wrong.eps>
-(epstopdf)                    date: 2013-08-14 10:47:33
+(epstopdf)                    date: 2013-08-26 17:20:30
 (epstopdf)                    size: 48268 bytes
 (epstopdf)             Output file: <geo_vs_exp_wrong-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-08-14 10:47:44
+(epstopdf)                    date: 2013-08-26 17:20:30
 (epstopdf)                    size: 27951 bytes
 (epstopdf)             Command: <repstopdf --outfile=geo_vs_exp_wrong-eps-conve
 rted-to.pdf geo_vs_exp_wrong.eps>
@@ -1680,10 +1680,10 @@ Package pdftex.def Info: geo_vs_exp_wrong-eps-converted-to.pdf used on input li
 ne 341.
 (pdftex.def)             Requested size: 151.46503pt x 128.88133pt.
 Package epstopdf Info: Source file: <geo_vs_exp_right.eps>
-(epstopdf)                    date: 2013-08-14 10:47:33
+(epstopdf)                    date: 2013-08-26 17:20:30
 (epstopdf)                    size: 64617 bytes
 (epstopdf)             Output file: <geo_vs_exp_right-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-08-14 10:47:45
+(epstopdf)                    date: 2013-08-26 17:20:30
 (epstopdf)                    size: 34679 bytes
 (epstopdf)             Command: <repstopdf --outfile=geo_vs_exp_right-eps-conve
 rted-to.pdf geo_vs_exp_right.eps>
@@ -1820,10 +1820,10 @@ Overfull \hbox (254.49777pt too wide) has occurred while \output is active
 
 ]
 Package epstopdf Info: Source file: <Rstar.eps>
-(epstopdf)                    date: 2013-08-14 13:48:42
+(epstopdf)                    date: 2013-08-26 17:20:30
 (epstopdf)                    size: 5474 bytes
 (epstopdf)             Output file: <Rstar-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-08-14 14:46:57
+(epstopdf)                    date: 2013-08-26 17:20:30
 (epstopdf)                    size: 10443 bytes
 (epstopdf)             Command: <repstopdf --outfile=Rstar-eps-converted-to.pdf
  Rstar.eps>
@@ -1836,10 +1836,10 @@ File: Rstar-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: Rstar-eps-converted-to.pdf used on input line 540.
 (pdftex.def)             Requested size: 151.46503pt x 128.88133pt.
 Package epstopdf Info: Source file: <Rstar_dynamics.eps>
-(epstopdf)                    date: 2013-08-14 13:48:42
+(epstopdf)                    date: 2013-08-26 17:20:30
 (epstopdf)                    size: 28352 bytes
 (epstopdf)             Output file: <Rstar_dynamics-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-08-14 14:46:58
+(epstopdf)                    date: 2013-08-26 17:20:30
 (epstopdf)                    size: 18900 bytes
 (epstopdf)             Command: <repstopdf --outfile=Rstar_dynamics-eps-convert
 ed-to.pdf Rstar_dynamics.eps>
