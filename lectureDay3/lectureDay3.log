@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  21 AUG 2013 14:19
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  28 AUG 2013 17:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1472,10 +1472,10 @@ Overfull \hbox (227.58443pt too wide) has occurred while \output is active
 
 ]
 Package epstopdf Info: Source file: <nonlinear.eps>
-(epstopdf)                    date: 2013-08-21 08:06:43
+(epstopdf)                    date: 2013-08-26 17:20:31
 (epstopdf)                    size: 39053 bytes
 (epstopdf)             Output file: <nonlinear-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-08-21 08:20:34
+(epstopdf)                    date: 2013-08-26 17:20:31
 (epstopdf)                    size: 16350 bytes
 (epstopdf)             Command: <repstopdf --outfile=nonlinear-eps-converted-to
 .pdf nonlinear.eps>
@@ -1502,10 +1502,10 @@ Overfull \hbox (227.58443pt too wide) has occurred while \output is active
 
  <./nonlinear-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <example_nonlinear.eps>
-(epstopdf)                    date: 2011-01-26 16:16:50
+(epstopdf)                    date: 2013-08-26 17:20:31
 (epstopdf)                    size: 101093 bytes
 (epstopdf)             Output file: <example_nonlinear-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-08-21 10:03:36
+(epstopdf)                    date: 2013-08-26 17:20:31
 (epstopdf)                    size: 46467 bytes
 (epstopdf)             Command: <repstopdf --outfile=example_nonlinear-eps-conv
 erted-to.pdf example_nonlinear.eps>
@@ -1640,10 +1640,10 @@ Overfull \hbox (227.58443pt too wide) has occurred while \output is active
 
 ]
 Package epstopdf Info: Source file: <storage_extinction.eps>
-(epstopdf)                    date: 2010-10-13 09:11:42
+(epstopdf)                    date: 2013-08-26 17:20:31
 (epstopdf)                    size: 6659 bytes
 (epstopdf)             Output file: <storage_extinction-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-08-21 10:22:46
+(epstopdf)                    date: 2013-08-26 17:20:31
 (epstopdf)                    size: 8088 bytes
 (epstopdf)             Command: <repstopdf --outfile=storage_extinction-eps-con
 verted-to.pdf storage_extinction.eps>
@@ -1665,10 +1665,10 @@ Overfull \hbox (227.58443pt too wide) has occurred while \output is active
 
  <./storage_extinction-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <drift_stab.eps>
-(epstopdf)                    date: 2010-02-18 07:50:46
+(epstopdf)                    date: 2013-08-26 17:20:31
 (epstopdf)                    size: 18957 bytes
 (epstopdf)             Output file: <drift_stab-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-08-21 10:22:47
+(epstopdf)                    date: 2013-08-26 17:20:31
 (epstopdf)                    size: 15836 bytes
 (epstopdf)             Command: <repstopdf --outfile=drift_stab-eps-converted-t
 o.pdf drift_stab.eps>
@@ -1691,10 +1691,10 @@ Overfull \hbox (227.58443pt too wide) has occurred while \output is active
 
  <./drift_stab-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <drift_stab.eps>
-(epstopdf)                    date: 2010-02-18 07:50:46
+(epstopdf)                    date: 2013-08-26 17:20:31
 (epstopdf)                    size: 18957 bytes
 (epstopdf)             Output file: <drift_stab-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-08-21 10:22:47
+(epstopdf)                    date: 2013-08-26 17:20:31
 (epstopdf)                    size: 15836 bytes
 (epstopdf)             Command: <repstopdf --outfile=drift_stab-eps-converted-t
 o.pdf drift_stab.eps>
@@ -1799,7 +1799,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2011/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2011/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/2011/texm
 f-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on lectureDay3.pdf (31 pages, 629594 bytes).
+Output written on lectureDay3.pdf (31 pages, 629587 bytes).
 PDF statistics:
  512 PDF objects out of 1000 (max. 8388607)
  427 compressed objects within 5 object streams
